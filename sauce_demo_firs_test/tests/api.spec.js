@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Набор тестов для проверки основных CRUD-операций', () => {
+test.describe('Набор тестов для проверки основных CRUD-операций @api', () => {
   const baseURL = 'https://restful-booker.herokuapp.com';
 
   const createBookingData = {
@@ -110,7 +110,7 @@ test.describe('Набор тестов для проверки основных 
     validateBookingData(responseBody, createBookingData);
     console.log('✅ Данные получены корректно');
   });
-  
+
 
   test('3. Обновление бронирования (Update - PUT)', async ({ request }) => {
     console.log('=== Тест 3: Обновление бронирования ===');

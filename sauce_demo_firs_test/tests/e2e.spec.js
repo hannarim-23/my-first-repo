@@ -6,7 +6,7 @@ import { CheckoutStepOnePage } from '../pages/сheckoutStepOnePage';
 import { CheckoutStepTwoPage } from '../pages/CheckoutStepTwoPage';
 import { CheckoutCompletePage } from '../pages/checkoutCompletePage';
 
-test.describe('входа в систему и завершение покупки', () => {
+test.describe('входа в систему и завершение покупки @ui', () => {
   test('', async ({ page }) => {
     // 1. Открыть страницу логина
     const loginPage = new LoginPage(page);
@@ -82,3 +82,8 @@ test.describe('входа в систему и завершение покупк
     await expect(page).toHaveURL('https://www.saucedemo.com/');
   });
 });
+
+
+
+
+
