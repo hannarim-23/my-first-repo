@@ -8,3 +8,4 @@ node_modules/
 /playwright/.auth/
 
 login_1.spec.js
+api.spec copy.js
