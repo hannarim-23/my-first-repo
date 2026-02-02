@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Авторизация на Sauce Demo', () => {
-  test('Пользователь должен успешно войти в систему @ui', async ({ page }) => {
+test.describe('Авторизация на Sauce Demo  @ui', () => {
+  test('Пользователь должен успешно войти в систему', async ({ page }) => {
     await page.goto('https://www.saucedemo.com/');
 
     await page.locator('#user-name').fill('standard_user');
